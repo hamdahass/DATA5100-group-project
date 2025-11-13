@@ -1,15 +1,20 @@
-# Project Title (This is a template README.md file that you can adapt to your project)
+# Breast Cancer
 
-> A brief description of what the project does and its purpose.
+> The purpose of this project is to identify which cell-level characteristics are most strongly associated with the presence of breast cancer. Using the Breast Cancer Wisconsin dataset, we examine how various features of cell nuclei—such as radius, texture, perimeter, area, smoothness, concavity, and symmetry—differ between benign and malignant diagnoses. By comparing these measurements across the two groups, this analysis aims to determine which variables serve as the strongest indicators of malignancy and therefore may be most useful for predicting breast cancer.
 
 ---
 
 ## Project Overview
 
-Provide a short and concise overview of the project. Mention the problem it solves, the data used, and the key outcomes or findings.
+We can use this dataset to investigate the following
+    Which features show the biggest differences between benign and malignant tumors?
+    Are malignant tumors larger in size?
+    Do malignant tumors have more irregular shapes?
+    Which features are the BEST predictors of cancer? (ML)
+    Can a single feature predict cancer almost as well as multiple features? (ML)
 
-- **Objective:** Clearly state the main goal of the project.
-- **Domain:** (e.g., Healthcare, Finance, E-commerce, etc.)
+- **Objective:** Predict the presence of Breast Cancer
+- **Domain:** Healthcare
 - **Key Techniques:** (e.g., Regression, Classification, Clustering, NLP, Time Series)
 
 ---
