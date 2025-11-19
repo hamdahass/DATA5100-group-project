@@ -11,6 +11,7 @@ We can use this dataset to investigate the following
     Are malignant tumors larger in size?
     Do malignant tumors have more irregular shapes?
     Which features are the BEST predictors of cancer? (ML)
+    Which features correlate strongest with the diagnosis?
     Can a single feature predict cancer almost as well as multiple features? (ML)
 
 - **Objective:** Predict the presence of Breast Cancer
