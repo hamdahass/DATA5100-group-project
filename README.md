@@ -52,7 +52,11 @@ Python was used to perform the analysis in a Jupyter notebook. Logistic regressi
 
 ## Results
 
-All of the models predicted the diagnosis, some better than others. The XGBoost model predicted the diagnosis with over 99% accuracy. This implies that a model can predict the diagnosis using these features.
+We analyzed the Breast Cancer Wisconsin Diagnostic dataset to determine how well different machine learning models could predict whether a tumor is malignant or benign based on 30 numerical features extracted from biopsy images. We tested several modeling approaches, including single-feature logistic regression, multiple-feature models, Random Forest, and XGBoost.
+
+Our single-input models showed that individual features like radius and concave points hold strong predictive power, but they also revealed limitations, especially in correctly identifying malignant tumors. Adding multiple features improved performance, demonstrating that cancer diagnosis cannot rely on one measurement alone.
+
+Tree-based models produced the strongest results. Random Forest achieved over 91% accuracy and demonstrated the value of combining predictors. Our most successful approach, XGBoost, reached 99.12% accuracy and an AUC of 99.31%, misclassifying only one benign case and correctly identifying every malignant tumor in the test set. These results show that machine learning, especially advanced ensemble models can effectively support breast cancer detection by recognizing structural patterns in tumor cell features.
 
 ---
 
@@ -72,5 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements
 
 - Tools/libraries used: Python: NumPy, Pandas, Matplotlib, Seaborn, scikit-learn, statsmodels, XGBoost
-- Tutorials or papers referenced
-- Inspiration or collaborators
+- https://www.cancercenter.com/community/blog/2023/01/whats-the-difference-benign-vs-malignant-tumors
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7237065/ 
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC8184621/
+- https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/
