@@ -38,8 +38,9 @@ This project seeks to use machine learning to predict the presence of breast can
 ---
 
 ## Analysis
+The analysis was conducted in Python using Jupyter Notebook. We began by importing the dataset and performing basic data cleaning steps, including checking for missing values, verifying that all numerical features contained valid (non-negative) measurements, and confirming the dataset's structure. Because many of the 30 features are highly correlated (such as radius, perimeter, and area), we kept the possibility of multicollinearity in mind during model development. Exploratory visualizations were created using histograms and kernel density estimates to compare feature distributions across benign and malignant diagnoses.
 
-Python was used to perform the analysis in a Jupyter notebook. Logistic regression, random forest, and XGBoost models were built to predict the diagnosis using the thirty features. The code will reproduce the results if run in order.
+After preprocessing, we implemented several supervised machine learning models using Scikit-Learn, including single-input and multiple-input logistic regression, a random forest classifier, and an XGBoost model. For each model, we split the data into training and testing sets, fitted the classifier, generated predictions, and evaluated performance using accuracy, AUC, and confusion matrices. Hyperparameter tuning for XGBoost was performed using GridSearchCV, and Recursive Feature Elimination (RFE) was used to determine the optimal number of features. All analysis steps, from preprocessing to modeling, can be reproduced by running the notebook sequentially.
 
 ---
 
